@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HSM-Tables</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/hsm.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<script src="../js/hsm.js"></script>
+    <style>
+        main{
+            display: flex;
+        }
+        @media screen and (min-width: 960px){
+            main{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body id="doc">
+          <header>
+        <div class="top-toolbar ">
+       <div class="top-toolbar-left">
+           <ul class="text-widget">
+               <li> <a href="../index.html" class="hsm-logo"> <img src="../img/logo.png" alt="logo" width="35"></a> </li>
+               <li class="text-left"><p class="text">CSS Framework for restaurant sites</p></li>
+           </ul>
+       </div>l
+       <div class="top-toolbar-right ">
+          <ul class="text-widget social-widgets social">
+               <li><a href="https://github.com" class="git" target="_blank"><i class="fab fa-github-square"></i></a></li>
+               <li><a href="https://google.com" class="gl" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
+               <li><a href="https://twitter.com" class="tw" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+               <li><a href="https://www.facebook.com/" class="fb" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+               <li>
+               <a href="../HSM-Framework.zip" class="download-btn btn"> Download <i class="fas fa-cloud-download-alt"> </i></a>
+               </li>
+           </ul>
+       </div>
+   </div>
+         <nav class="navbar-container">
+       <div class="">
+           <a href="../index.html" class="hsm-brand"><b>HSM</b></a>
+       </div>
+       <button id="navbar-toggler">
+             <span class="menu-bar-icon"><i class="fas fa-bars"></i></span>
+       </button>
+       <div id="menu">
+            <ul class="main-nav">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-title">&nbsp;Home&nbsp;</a>
+                </li>
+                <li class="nav-item">
+                    <a href="intro.html" class="nav-title">&nbsp; Intro &nbsp;</a>
+                </li>
+                <li class="nav-item">
+                    <a href="doc.html" class="nav-title active-nav-title">Documentation</a>
+                </li>
+                <li class="nav-item dropdown-menu">
+                    <a href="example.html" class="nav-title">Examples</a>
+	           </li>
+                <li class="nav-item dropdown-menu">
+                    <a href="more.html" class="nav-title">&nbsp;More&nbsp;</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+     </header>
+
+
+<main id="typo">
+    <button class="sidebar-toggler">
+                 <span class="menu-bar"><i class="fas fa-bars"></i> </span>
+        </button>
+     <div class="sidebar">
+        <div class="sidebar-menu">
+         <h3 class="sidebar-heading">Getting Started <span class="menu-bar-close"><i class="far fa-window-close"></i> </span> </h3>
+          <a href="download.html" class="sidebar-item sidebar-title">Download</a>
+          <a href="#" class="sidebar-item sidebar-title">Content</a>
+          <a href="typography.html" class="sidebar-item">Typography</a>
+          <a href="cards.html" class="sidebar-item">Cards</a>
+          <a href="image.html" class="sidebar-item">Images</a>
+          <a href="nav.html" class="sidebar-item">Navigation</a>
+          <a href="carousel.html" class="sidebar-item">Carousel</a>
+          <a href="sidebar.html" class="sidebar-item">Sidebar</a>
+          <a href="buttons.html" class="sidebar-item">Button</a>
+          <a href="accordion.html" class="sidebar-item">Accordion</a>
+          <a href="grid.html" class="sidebar-item">Grid</a>
+          <a href="forms.html" class="sidebar-item">Forms</a>
+          <a href="tabs.html" class="sidebar-item">Tabs</a>
+          <a href="gallery.html" class="sidebar-item">Gallery</a>
+          <a href="tables.html" class="sidebar-item">Tables</a>
+          <a href="menuGrid.html" class="sidebar-item">Menu Grid</a>
+          <a href="mQueries.html" class="sidebar-item">Media Queries</a>
+          <a href="heplClasses.html" class="sidebar-item">Help classes</a>
+      </div>
+    </div>
+
+
+    <div class=" documentation">
+        <h1 class="title"> Tables</h1>
+       <div class="info">
+       <section class="inline-el">
+           <h2 class="h2 mb">Basic Tables</h2>
+           <p>Design beautiful tables using just a few classes and HTML5 syntax. To design a basic table use the class <span class="sp">.basic-table and .table-container</span>. The <span class="sp">.table-container</span> adds a 1em/16px padding all the way around. To center the contents of the table use the class <span class="sp">.table-center</span></p>
+        	<div class="table-container table-responsive">
+          <h4>Basic Table</h4>
+
+          <table class="basic-table table-center">
+           <caption>Table caption</caption>
+            <thead>
+                <tr>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+            </tbody>
+          </table>
+          <h4 class="mt bm">
+          	HTML Structure:
+          </h4>
+          <div class="htmlCode">
+
+          		<pre>
+	 &lt;table class="basic-table table-center"&gt;
+           &lt;caption&gt;Table caption&lt;/caption&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          		</pre>
+
+          </div>
+        </div>
+
+        <h2 class="h2">Striped Row Table</h2>
+        <p>Add the class <span class="sp">.striped-table</span> to style the tables as stripped</p>
+        <div class="">
+          <table class="basic-table striped-table">
+           <caption>Table caption</caption>
+            <thead>
+                <tr>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <h4 class="mt bm">
+          	HTML Structure:
+          </h4>
+          <div class="htmlCode">
+
+          		<pre>
+	 &lt;table class="basic-table striped-table"&gt;
+           &lt;caption&gt;Table caption&lt;/caption&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          		</pre>
+
+          </div>
+
+
+        <h2 class="h2">Striped Column Table</h2>
+                <p>Add the class <span class="sp">.striped-col-table</span> to style the tables as striped columns</p>
+        <div class="table-container">
+          <h4>Striped Column Table</h4>
+
+          <table class="basic-table striped-col-table">
+           <caption>Table caption</caption>
+            <thead>
+                <tr>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <h4 class="mt bm">
+          	HTML Structure:
+          </h4>
+          <div class="htmlCode">
+
+          		<pre>
+	 &lt;table class="basic-table striped-col-table"&gt;
+           &lt;caption&gt;Table caption&lt;/caption&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          		</pre>
+
+          </div>
+
+
+
+          <h2 class="h2">Table lined</h2>
+          <p>Add the class <span class="sp">.table-lined</span> to style the tables with lines as seprator for rows</p>
+        <div class="table-container">
+          <h4>Striped Column Table</h4>
+
+          <table class="basic-table table-lined">
+           <caption>Table caption</caption>
+            <thead>
+                <tr>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <h4 class="mt bm">
+          	HTML Structure:
+          </h4>
+          <div class="htmlCode">
+
+          		<pre>
+	 &lt;table class="basic-table table-lined"&gt;
+           &lt;caption&gt;Table caption&lt;/caption&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          		</pre>
+
+          </div>
+
+
+         <h2 class="h2">Table lined Colunms</h2>
+                   <p>Add the class <span class="sp">.table-lined-col</span> to style the tables with lines as seprator for columns</p>
+        <div class="table-container">
+          <h4>Striped Column Table</h4>
+
+          <table class="basic-table table-lined-col">
+           <caption>Table caption</caption>
+            <thead>
+                <tr>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <h4 class="mt bm">
+          	HTML Structure:
+          </h4>
+          <div class="htmlCode">
+
+          		<pre>
+	 &lt;table class="basic-table table-lined-col"&gt;
+           &lt;caption&gt;Table caption&lt;/caption&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          		</pre>
+
+          </div>
+
+
+           <h2 class="h2">Bordered Table</h2>
+                              <p>Add the class <span class="sp">.table-border</span> to style the tables with lines as seprator for columns and rows</p>
+        <div class="table-container">
+          <h4>Striped Column Table</h4>
+
+          <table class="basic-table table-border">
+           <caption>Table caption</caption>
+            <thead>
+                <tr>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <h4 class="mt bm">
+          	HTML Structure:
+          </h4>
+          <div class="htmlCode">
+
+          		<pre>
+	 &lt;table class="basic-table table-border"&gt;
+           &lt;caption&gt;Table caption&lt;/caption&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          		</pre>
+
+          </div>
+
+
+
+           <h2 class="h2">Responsive Table</h2>
+                     <p>Add the class <span class="sp">.table-responsive</span> to make the table responsive with a scroll bar along the x-axis</p>
+        <div class="table-container table-responsive">
+          <h4>Responsive Table - Scroll Bar</h4>
+
+          <table class="basic-table">
+           <caption>Table caption</caption>
+            <thead>
+                <tr>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <h4 class="mt bm">
+          	HTML Structure:
+          </h4>
+          <div class="htmlCode">
+
+          		<pre>
+  &lt;div class="table-container table-responsive"&gt;
+	 &lt;table class="basic-table"&gt;
+           &lt;caption&gt;Table caption&lt;/caption&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                  &lt;th&gt;Table Heading&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                  &lt;td&gt;Table Data&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+&lt;/div&gt;
+          		</pre>
+
+          </div>
+
+
+  <p>
+  	<a href="../examples/table.html" class="btn btn-primary" target="_blank">See More Examples</a>
+  </p>
+
+       </section>
+       </div>
+    </div><div class="clearfix"></div>
+</main>
+
+</body>
+</html>

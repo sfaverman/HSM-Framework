@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="CSS Framework" content="Easy framework to build responsive website">
+    <title>CSS Framework-Restaurant</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hsm.css" type="text/css">
+    <style>
+		.wrapper {
+			padding: 0 10px;
+		}
+		.grid  {
+			display: grid;
+  			column-gap: 2%;
+  			grid-row-gap: 10px;
+		}
+		.grid {
+		/*.column2, .column3, column4, .asideLeft, .asideRight, .doubleSides {*/
+  			grid-template-columns: 1fr;
+  		}
+		.grid .col{
+			background-color: aliceblue;
+			padding: 0 10px;
+		}
+		.grid > article, .grid > div, .grid > section {
+			background-color: aliceblue;
+			padding: 0 10px;
+		}
+		aside {
+			background-color: antiquewhite;
+			padding: 0 10px;
+		}
+		img {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		/* small */
+		@media screen and (min-width:480px) {
+			.column2 {
+				grid-template-columns: repeat(2, 49%);
+			}
+			.column4 {
+				grid-template-columns: repeat(2, 49%);
+			}
+
+		}
+		/* medium */
+		@media screen and (min-width:750px) {
+			.column3 {
+				grid-template-columns: repeat(3, 32%);
+			}
+			.column4 {
+				grid-template-columns: repeat(4, 23.5%);
+			}
+			.asideLeft {
+				grid-template-columns: 1fr 3fr;
+			}
+			.asideRight {
+				grid-template-columns: 3fr 1fr;
+			}
+			.doubleSides {
+				grid-template-columns: 1fr 3fr 1fr;
+			}
+		}
+		/* large */
+		@media screen and (min-width:750px) {
+		}
+	</style>
+</head>
+<body>
+    <header>
+        <h1>HSM Layout Grid </h1>
+    </header>
+
+
+ <div class="wrapper">
+ 	<h2> RWD according  to 12 column grid - 2% gap </h2>
+ 	<img src="images/layouts.jpg" alt="twelve column grid image">
+
+ 	<h2>2 Column Layout - class="grid column2"</h2>
+ 		<section class="grid column2">
+ 			<article>
+ 				<h3>Article 1 - 49%</h3>
+ 				<p> 2 column layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+ 			</article>
+ 			<article>
+ 				<h3>Article 2 - 49%</h3>
+ 				<p> 2 column layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+
+ 			</article>
+ 	 	</section>
+
+ 	<h2>3 Column Layout - class="grid column3"</h2>
+ 		<section class="grid column3">
+ 			<article>
+ 				<h3>Article 1 - 32%</h3>
+ 				<p> 3 column layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+ 			</article>
+ 			<article>
+ 				<h3>Article 2 - 32%</h3>
+ 				<p> 3 column layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. So dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam.</p>
+
+ 			</article>
+ 			<article>
+ 				<h3>Article 3 - 32%</h3>
+ 				<p> 3 column layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur.</p>
+ 			</article>
+ 		</section>
+
+ 	<h2>4 Column Layout - class="grid column4"</h2>
+ 		<section class="grid column4">
+ 			<article>
+ 				<h3>Article 1 - 23.5%</h3>
+ 				<p> 4 column layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+ 			</article>
+ 			<article>
+ 				<h3>Article 2 - 23.5%</h3>
+ 				<p> 4 column layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. column layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur.</p>
+
+ 			</article>
+ 			<article>
+ 				<h3>Article 3 - 23.5%</h3>
+ 				<p> 4 column layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+ 			</article>
+ 			<article>
+ 				<h3>Article 4 - 23.5%</h3>
+ 				<p> 4 column layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+ 			</article>
+ 		</section>
+
+ 	<h2>Aside to the Left - class="grid asideLeft"</h2>
+ 		<section class="grid asideLeft">
+ 			<aside>
+ 				<h3>Aside left</h3>
+
+ 				<p> Aside left. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+
+ 				<p> Paragraph 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+
+ 			</aside>
+ 			<article>
+ 				<article>
+ 					<h3>Article 1</h3>
+ 					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+ 				</article>
+ 				<article>
+ 					<h3>Article 2</h3>
+ 					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur.</p>
+
+ 				</article>
+ 				<article>
+ 					<h3>Article 3</h3>
+ 					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+ 				</article>
+ 			</article>
+ 		</section>
+
+ 	<h2>Aside to the Right - class="grid asideRight"</h2>
+ 		<section class="grid asideRight">
+ 			<article>
+ 				<article>
+ 					<h3>Article 1</h3>
+ 					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+ 				</article>
+ 				<article>
+ 					<h3>Article 2</h3>
+ 					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur.</p>
+
+ 				</article>
+ 				<article>
+ 					<h3>Article 3</h3>
+ 					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+ 				</article>
+ 			</article>
+ 			<aside>
+ 				<h3>Aside Right</h3>
+
+ 				<p> Aside right. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+
+ 				<p> Paragraph 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+
+ 			</aside>
+ 		</section>
+
+ 	<h2>2 Sides - class="grid doubleSides"</h2>
+ 		<section class="grid doubleSides">
+ 			<aside>
+ 				<h3>Aside</h3>
+
+ 				<p> Aside right. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+ 			</aside>
+ 			<article>
+ 				<article>
+ 					<h3>Article 1</h3>
+ 					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+ 				</article>
+ 				<article>
+ 					<h3>Article 2</h3>
+ 					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur.</p>
+
+ 				</article>
+ 				<article>
+ 					<h3>Article 3</h3>
+ 					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+ 				</article>
+ 			</article>
+ 			<aside>
+ 				<h3>Aside</h3>
+
+ 				<p> Aside right. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+
+ 				<p> Paragraph 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid voluptatibus ipsam, omnis fuga. Eius obcaecati cumque repellat, quibusdam iste id neque nesciunt tenetur. </p>
+
+ 			</aside>
+ 		</section>
+
+ 		<h4> Want to have a custom layout , specify class .grid for the container and apply your desired output at Media queries. Examples:</h4>
+
+ 		<p>@media screen and (min-width:480px) {    <br>
+ 						sectionA{ <br>
+ 						&nbsp;	grid-template-columns: 2fr 1fr;  <br>
+ 						} <br>
+ 						sectionB {   <br>
+ 						&nbsp;	grid-template-columns: 1fr 3fr 1fr;  <br>
+ 						} <br>
+ 						sectionC { <br>
+ 						&nbsp;	grid-template-columns: repeat(4, 23.5%); <br>
+ 						} <br>
+		} <br>
+
+		Learn More about <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+" target="_blank">CSS Grid Layouts.</a> at https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout.
+
+ 		</p>
+
+
+ 	</div> <!-- end wrapper >
+
+</body>
+</html>

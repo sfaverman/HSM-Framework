@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HSM-Tabs</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+<link rel="manifest" href="/site.webmanifest">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/hsm.css">
+<!--    <link rel="stylesheet" href="../css/main.css">-->
+    <link rel="stylesheet" href="../css/style.css">
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<script src="../js/hsm.js"></script>
+    <style>
+        main{
+            display: flex;
+        }
+        @media screen and (min-width: 960px){
+            main{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body id="doc">
+         <header>
+        <div class="top-toolbar ">
+       <div class="top-toolbar-left">
+           <ul class="text-widget">
+               <li> <a href="../index.html" class="hsm-logo"> <img src="../img/logo.png" alt="logo" width="35"></a> </li>
+               <li class="text-left"><p class="text">CSS Framework for restaurant sites</p></li>
+           </ul>
+       </div>l
+       <div class="top-toolbar-right ">
+          <ul class="text-widget social-widgets social">
+               <li><a href="https://github.com" class="git" target="_blank"><i class="fab fa-github-square"></i></a></li>
+               <li><a href="https://google.com" class="gl" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
+               <li><a href="https://twitter.com" class="tw" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+               <li><a href="https://www.facebook.com/" class="fb" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+               <li>
+               <a href="../HSM-Framework.zip" class="download-btn btn"> Download <i class="fas fa-cloud-download-alt"> </i></a>
+               </li>
+           </ul>
+       </div>
+   </div>
+         <nav class="navbar-container">
+       <div class="">
+           <a href="../index.html" class="hsm-brand"><b>HSM</b></a>
+       </div>
+       <button id="navbar-toggler">
+             <span class="menu-bar-icon"><i class="fas fa-bars"></i></span>
+       </button>
+       <div id="menu">
+            <ul class="main-nav">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-title">&nbsp;Home&nbsp;</a>
+                </li>
+                <li class="nav-item">
+                    <a href="intro.html" class="nav-title">&nbsp; Intro &nbsp;</a>
+                </li>
+                <li class="nav-item">
+                    <a href="doc.html" class="nav-title active-nav-title">Documentation</a>
+                </li>
+                <li class="nav-item dropdown-menu">
+                    <a href="example.html" class="nav-title">Examples</a>
+	           </li>
+                <li class="nav-item dropdown-menu">
+                    <a href="more.html" class="nav-title">&nbsp;More&nbsp;</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+     </header>
+
+
+<main id="typo">
+    <button class="sidebar-toggler">
+                 <span class="menu-bar"><i class="fas fa-bars"></i> </span>
+        </button>
+     <div class="sidebar">
+        <div class="sidebar-menu">
+         <h3 class="sidebar-heading">Getting Started <span class="menu-bar-close"><i class="far fa-window-close"></i> </span> </h3>
+          <a href="download.html" class="sidebar-item sidebar-title">Download</a>
+          <a href="#" class="sidebar-item sidebar-title">Content</a>
+          <a href="typography.html" class="sidebar-item">Typography</a>
+          <a href="cards.html" class="sidebar-item">Cards</a>
+          <a href="image.html" class="sidebar-item">Images</a>
+          <a href="nav.html" class="sidebar-item">Navigation</a>
+          <a href="carousel.html" class="sidebar-item">Carousel</a>
+          <a href="sidebar.html" class="sidebar-item">Sidebar</a>
+          <a href="buttons.html" class="sidebar-item">Button</a>
+          <a href="accordion.html" class="sidebar-item">Accordion</a>
+          <a href="grid.html" class="sidebar-item">Grid</a>
+          <a href="forms.html" class="sidebar-item">Forms</a>
+          <a href="tabs.html" class="sidebar-item">Tabs</a>
+          <a href="gallery.html" class="sidebar-item">Gallery</a>
+          <a href="tables.html" class="sidebar-item">Tables</a>
+          <a href="grid.html" class="sidebar-item">Menu Grid</a>
+          <a href="mQueries.html" class="sidebar-item">Media Queries</a>
+          <a href="heplClasses.html" class="sidebar-item">Help classes</a>
+      </div>
+    </div>
+
+
+<div class=" documentation">
+   <h1 class="title"> Tabs</h1>
+   <div class="info">
+     <section class="inline-el">
+<h2 class="h2">Horizontal Tabs</h2>
+           <p>
+       	- use a <span class="sp">.tab-container</span> class  as wraper class for tabs.
+       	<br>
+           - It should contain <span class="sp">ul</span> with <span class="sp">.tabs</span> class which will create the tab links. Each tab links data-tab attribute value should match the <span class="sp">id</span> of its tabs content. The tab content should be wrapped around a <span class="sp">div</span> with class <span class="sp">.tab-content</span>
+       	<br>
+           - <span class="sp">div</span> with the class <span class="sp">.current</span> will be set as the default active tab
+       </p>
+		       <div class="tab-container">
+			<ul class="tabs">
+				<li class="current" data-tab="tab-1">Breakfast</li>
+				<li data-tab="tab-2">Lunch</li>
+				<li data-tab="tab-3">Dinner</li>
+			</ul>
+			<div id="tab-1" class="tab-content current clearfloat">
+			<h2>This is the first tab</h2>
+				<img src="../images/watermelonMint.jpg" alt="water" class="floatRight-md img-responsive">
+						<p>Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment. Never be bullied into silence. Never allow yourself to be made a victim. Accept no one’s definition of your life; define yourself.</p>
+
+</div>
+			<div id="tab-2" class="tab-content clearfloat">
+				<h2>This is the second tab</h2>
+				 <img src="../images/page-2_img02.jpg" alt="water" class="floatRight-md img-responsive">
+						<p>Food qualities braise chicken cuts bowl through slices butternut snack. Tender meat juicy dinners. One-pot low heat plenty of time adobo fat raw soften fruit. sweet renders bone-in marrow richness kitchen, fricassee basted pork shoulder.</p>
+</div>
+			<div id="tab-3" class="tab-content clearfloat">
+	<h2>This is the third tab</h2>
+		<img src="../images/watermelonMint.jpg" alt="water" class="floatRight-md img-responsive">
+                <p>Juicy meatballs brisket slammin' baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk greens. Crafting renders aromatic enjoyment, then slices taco. Minutes undisturbed cuisine lunch magnificent mustard curry. Juicy share baking sheet pork. Meals ramen rarities selection, raw pastries richness magnificent atmosphere. </p>
+
+	</div>
+	   </div>
+       </section>
+
+
+        <div class="htmlCode">
+
+			<pre>
+
+&lt;div class=" documentation"&gt;
+   &lt;h1 class="title"&gt; Tabs&lt;/h1&gt;
+   &lt;div class="info"&gt;
+     &lt;section class="inline-el"&gt;
+        &lt;h4 class="mb mt"&gt;Horizontal Tabs&lt;/h4&gt;
+         &lt;div class="tab-container"&gt;
+			&lt;ul class="tabs"&gt;
+			  &lt;li class="current" data-tab="tab-1"&gt;Breakfast&lt;/li&gt;
+			  &lt;li data-tab="tab-2"&gt;Lunch&lt;/li&gt;
+			  &lt;li data-tab="tab-3"&gt;Dinner&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;div id="tab-1" class="tab-content current"&gt;
+			  &lt;h2&gt;This is the first tab&lt;/h2&gt;
+			  &lt;p&gt;...&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div id="tab-2" class="tab-content"&gt;
+			  &lt;h2&gt;This is the second tab&lt;/h2&gt;
+			  &lt;p&gt;...&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div id="tab-3" class="tab-content"&gt;
+			  &lt;h2&gt;This is the third tab&lt;/h2&gt;
+              &lt;p&gt;&lt;/p&gt;
+			&lt;/div&gt;
+	     &lt;/div&gt;
+       &lt;/section&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+			</pre>
+
+</div>
+
+  <section class="inline-el">
+  <h2 class="h2">Vertical Tabs</h2>
+     <p>
+       	- For vertical tabs use the <span class="sp">.tab-container-vertical</span> class  as wraper class for tabs.
+       	<br>
+           - It should contain <span class="sp">ul</span> with <span class="sp">.tabs-vertical</span> class which will create the tab links. Each tab links data-tab attribute value should match the <span class="sp">id</span> of its tabs content. The tab content should be wrapped around a <span class="sp">div</span> with class <span class="sp">.tab-content-vertical</span>
+       	<br>
+           - <span class="sp">div</span> with the class <span class="sp">.current-v</span> will be set as the default active tab
+       </p>
+      <div class="tab-container-vertical">
+
+	<ul class="tabs-vertical">
+		<li class="current-v" data-tab="tabv-1">Breakfast</li>
+		<li data-tab="tabv-2">Lunch</li>
+		<li data-tab="tabv-3">Dinner</li>
+		<li data-tab="tabv-4">Snacks</li>
+		<li data-tab="tabv-5">Drinks</li>
+	</ul>
+
+	<div id="tabv-1" class="tab-content-vertical current-v clearfloat">
+	<h2>This is the first tab</h2>
+		<img src="../images/watermelonMint.jpg" alt="water" class="floatRight-md img-responsive">
+                <p>Juicy meatballs brisket slammin' baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk greens.Crafting renders aromatic enjoyment, then slices taco. Minutes undisturbed cuisine lunch magnificent mustard curry. Juicy share baking sheet pork. Meals ramen rarities selection, raw pastries richness magnificent atmosphere.  </p>
+
+	</div>
+	<div id="tabv-2" class="tab-content-vertical clearfloat">
+        <h2>This is the second tab</h2>
+         <img src="../images/page-2_img02.jpg" alt="water" class="floatRight-md img-responsive">
+                <p>Crafting renders aromatic enjoyment, then slices taco. Minutes undisturbed cuisine lunch magnificent mustard curry. Juicy share baking sheet pork. Meals ramen rarities selection, raw pastries richness magnificent atmosphere. </p>
+	</div>
+	<div id="tabv-3" class="tab-content-vertical clearfloat">
+	<h2>This is the third tab</h2>
+		<img src="../images/watermelonMint.jpg" alt="water" class="floatRight-md img-responsive">
+                <p>Juicy meatballs brisket slammin' baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk greens. Crafting renders aromatic enjoyment, then slices taco. Minutes undisturbed cuisine lunch magnificent mustard curry. Juicy share baking sheet pork. Meals ramen rarities selection, raw pastries richness magnificent atmosphere.  </p>
+
+	</div>
+	<div id="tabv-4" class="tab-content-vertical clearfloat">
+	<h2>This is the fourth tab</h2>
+		<img src="../images/page-2_img02.jpg" alt="water" class="floatRight-md img-responsive">
+                <p>Crafting renders aromatic enjoyment, then slices taco. Minutes undisturbed cuisine lunch magnificent mustard curry. Juicy share baking sheet pork. Meals ramen rarities selection, raw pastries richness magnificent atmosphere. </p>
+	</div>
+	<div id="tabv-5" class="tab-content-vertical clearfloat">
+	<h2>This is the fifth tab</h2>
+		<img src="../images/watermelonMint.jpg" alt="water" class="floatRight-md img-responsive">
+                <p>Juicy meatballs brisket slammin' baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk greens. Crafting renders aromatic enjoyment, then slices taco. Minutes undisturbed cuisine lunch magnificent mustard curry. Juicy share baking sheet pork. Meals ramen rarities selection, raw pastries richness magnificent atmosphere. </p>
+
+	</div>
+
+</div>
+       </section>
+ <h4 class="mb mt">HTML stucture: </h4>
+  <div class="htmlCode">
+
+  		<pre>
+
+&lt;div class="tab-container-vertical"&gt;
+
+	&lt;ul class="tabs-vertical"&gt;
+	 &lt;li class="current-v" data-tab="tabv-1"&gt;Breakfast&lt;/li&gt;
+	 &lt;li data-tab="tabv-2"&gt;Lunch&lt;/li&gt;
+	 &lt;li data-tab="tabv-3"&gt;Dinner&lt;/li&gt;
+	 &lt;li data-tab="tabv-4"&gt;Snacks&lt;/li&gt;
+	 &lt;li data-tab="tabv-5"&gt;Drinks&lt;/li&gt;
+  &lt;/ul&gt;
+
+	&lt;div id="tabv-1" class="tab-content-vertical current-v clearfloat"&gt;
+	 &lt;h2&gt;This is the first tab&lt;/h2&gt;
+		&lt;img src="images/watermelonMint.jpg" alt="water" class="floatRight-md img-responsive"&gt;
+        &lt;p&gt;Juicy meatballs brisket slamminmagnificent atmosphere. ... &lt;/p&gt;
+	&lt;/div&gt;
+
+	&lt;div id="tabv-2" class="tab-content-vertical clearfloat"&gt;
+        &lt;h2&gt;This is the second tab&lt;/h2&gt;
+        &lt;img src="images/page-2_img02.jpg" alt="water" class="floatRight-md img-responsive"&gt;
+        &lt;p&gt;Crafting renders aromatic enjoymre ba. ..... &lt;/p&gt;
+	&lt;/div&gt;
+
+	&lt;div id="tabv-3" class="tab-content-vertical clearfloat"&gt;
+	  &lt;h2&gt;This is the third tab&lt;/h2&gt;
+	  &lt;img src="images/watermelonMint.jpg" alt="water" class="floatRight-md img-responsive"&gt;
+      &lt;p&gt;Juicy meatballs brisket slammin' baked shoulder....  &lt;/p&gt;
+	&lt;/div&gt;
+
+	&lt;div id="tabv-4" class="tab-content-vertical clearfloat"&gt;
+	&lt;h2&gt;This is the fourth tab&lt;/h2&gt;
+		&lt;img src="images/page-2_img02.jpg" alt="water" class="floatRight-md img-responsive"&gt;
+        &lt;p&gt;Crafting renders aromatic enjoyment, then slices taco.... &lt;/p&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+  		</pre>
+
+  </div>
+   </div>
+
+</div><div class="clearfix"></div>
+
+
+</main>
+
+</body>
+</html>

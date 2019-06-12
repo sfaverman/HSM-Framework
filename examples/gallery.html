@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="CSS Framework" content="Easy framework to build responsive website">
+    <title>CSS Framework-Restaurant</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hsm.css" type="text/css">
+    <style>
+		 .gallery {
+       		/*background-color:  #f1f1f1;*/
+			padding: 1%;
+			margin: 2% 0;
+			display: flex;
+       		justify-content: center; /* space-between; */
+       		flex-wrap: wrap; /* nowrap*/
+		}
+
+		.gallery > article, .gallery > div {
+			background-color: #fff;
+			margin: 10px;
+    	}
+
+		 /* new card - rounded corner style */
+
+		.card-rounded {
+  			/* Add shadows to create the "card" effect */
+				background-color: #d2c82a !important;
+    			color: white;
+				width: 100%;
+				text-align: center;
+				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+				transition: 0.3s;
+				border-radius: 5px;
+				margin: 20px !important;
+				padding: 10px;
+			    position: relative;
+		}
+		.card-rounded:hover {
+    			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		}
+		.card-rounded img {
+    		border-radius: 5px 5px 0 0;
+		}
+		/*.gallery img:hover {
+  			transform: scale(1.1);
+		}*/
+
+		 .card-rounded .btn {
+			 position: absolute;
+			 bottom: 0;
+			 left: 0;
+			 margin: 10px 35%;
+
+		 }
+		.card-rounded p {
+			 padding-bottom: 35px;
+		 }
+		@media screen and (min-width: 620px) {
+    		div.card-rounded {
+				margin-top: 0;
+        		width: 18rem;
+    		}
+			 .card-rounded .btn {
+				 margin: 10px 30%;
+		    }
+
+		</style>
+
+</head>
+<body>
+    <header>
+        <h1>HSM Gallery Examples</h1>
+    </header>
+
+    <h2>Gallery Sample 1</h2>
+
+    <section class="gallery">
+
+        <div class="card-container">
+            <div><img src="images/page-2_img02.jpg" alt="image" class="img-responsive"></div>
+            <div>
+                 <h3>Name 1</h3>
+                <p>Information 1</p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div><img src="images/page-2_img02.jpg" alt="image" class="img-responsive"></div>
+            <div>
+                <h3>Name 2</h3>
+                <p>Information 2</p>
+            </div>
+        </div>
+
+		<div class="card-container">
+            <div><img src="images/page-2_img02.jpg" alt="image" class="img-responsive"></div>
+            <div>
+                 <h3>Name 3</h3>
+                <p>Information 3</p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div><img src="images/page-2_img02.jpg" alt="image" class="img-responsive"></div>
+            <div>
+                <h3>Name 4</h3>
+                <p>Information 4</p>
+            </div>
+        </div>
+
+		<div class="card-container">
+            <div><img src="images/page-2_img02.jpg" alt="image" class="img-responsive"></div>
+            <div>
+                 <h3>Name 5</h3>
+                <p>Information 5</p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div><img src="images/page-2_img02.jpg" alt="image" class="img-responsive"></div>
+            <div>
+                <h3>Name 6</h3>
+                <p>Information 6</p>
+            </div>
+        </div>
+
+		<div class="card-container">
+            <div><img src="images/page-2_img02.jpg" alt="image" class="img-responsive"></div>
+            <div>
+                 <h3>Name 7</h3>
+                <p>Information 7</p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div><img src="images/page-2_img02.jpg" alt="image" class="img-responsive"></div>
+            <div>
+                <h3>Name 8</h3>
+                <p>Information 8</p>
+            </div>
+        </div>
+
+  </section>
+
+  <h2>Gallery Sample 2 </h2>
+
+  <section class="gallery">
+
+  	    <div class="priceCard-container text-alignCenter floatLeft-md">
+
+                <div class="priceTag">$22<sup>99</sup></div>
+                <div class="priceTitle">Breakfast</div>
+                <div class="priceContent">
+                    <ul class="listStyle noListBullet">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+
+        </div>
+        <div class="priceCard-container text-alignCenter floatLeft-md">
+
+                <div class="priceTag">$22<sup>99</sup></div>
+                <div class="priceTitle">Lunch</div>
+                <div class="priceContent">
+                    <ul class="listStyle noListBullet">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+
+        </div>
+                <div class="priceCard-container text-alignCenter floatLeft-md">
+
+                <div class="priceTag">$22<sup>99</sup></div>
+                <div class="priceTitle">Dinner</div>
+                <div class="priceContent">
+                    <ul class="listStyle noListBullet">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+
+        </div>
+ </section>
+
+ <h2>Gallery Sample 3</h2>
+	<section class="gallery">
+		   <div class="card-rounded">
+		            <img src="images/page-2_img02.jpg" alt="image" class="img-responsive">
+		            <div>
+		                 <h3>San Diego Deli Pizza</h3>
+		                 <p>ABC-Pizza's traditional pan pizza baked to perfection and topped with freshly sliced pepperoni and salami, spicy Italian sausage, savory Canadian bacon, lean ground beef and our signature gourmet cheese blend.</p>
+		                 <a href="#" class="btn button ">More Info</a>
+		            </div>
+		</div>
+		   <div class="card-rounded">
+			   <div><img src="images/page-2_img02.jpg" alt="image" class="img-responsive"></div>
+		            <div>
+		                 <h3>Bacon Cheeseburger Pizza</h3>
+		                 <p>ABC-Pizza's traditional pan pizza baked to perfection and topped with crispy bacon, lean ground beef, fresh onions, juicy pickles, ripe tomatoes, melty cheddar and our signature gourmet cheese blend.</p>
+		                 <a href="#" class="btn button ">More Info</a>
+		            </div>
+		   </div>
+
+		  <div class="card-rounded">
+		            <img src="images/page-2_img02.jpg" alt="image" class="img-responsive">
+		            <div>
+		                <h3>Chicken Supreme Pizza</h3>
+		                <p>ABC-Pizzas's traditional pan pizza baked to perfection and topped with tender grilled chicken strips, artichoke hearts, vine-ripened tomatoes, roasted garlic, ricotta cheese, sharp Parmesan, our signature gourmet cheese blend and sprinkled with fresh basil. </p>
+		                  <a href="#" class="btn button ">More Info</a>
+		            </div>
+		   </div>
+
+		    <div class="card-rounded">
+		            <img src="images/page-2_img02.jpg" alt="image" class="img-responsive">
+		            <div>
+		                <h3>Sausage Pizza</h3>
+		                <p>ABC-Pizza's traditional pan pizza baked to perfection, topped with Italian sausage, and our signature gourmet cheese blend. </p>
+		                  <a href="#" class="btn button ">More Info</a>
+		            </div>
+		   </div>
+		   		  <div class="card-rounded">
+		            <img src="images/page-2_img02.jpg" alt="image" class="img-responsive">
+		            <div>
+		                <h3>New York Pizza</h3>
+		                <p>ABC-Pizzas's traditional pan pizza baked to perfection and topped with tender grilled chicken strips, artichoke hearts, vine-ripened tomatoes, roasted garlic, ricotta cheese, sharp Parmesan, our signature gourmet cheese blend and sprinkled with fresh basil. </p>
+		                  <a href="#" class="btn button ">More Info</a>
+		            </div>
+		   </div>
+	</section>
+
+
+
+
+</body>
+</html>

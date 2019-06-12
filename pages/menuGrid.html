@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HSM- Grid Menu</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/hsm.css">
+    <link rel="stylesheet" href="../css/style.css">
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<script src="../js/hsm.js"></script>
+	 <style>
+        main{
+            display: flex;
+        }
+		.grid > div{
+			background-color: #fff;
+		}
+        @media screen and (min-width: 960px){
+            main{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body id="doc">
+          <header>
+        <div class="top-toolbar ">
+       <div class="top-toolbar-left">
+           <ul class="text-widget">
+               <li> <a href="../index.html" class="hsm-logo"> <img src="../img/logo.png" alt="logo" width="35"></a> </li>
+               <li class="text-left"><p class="text">CSS Framework for restaurant sites</p></li>
+           </ul>
+       </div>l
+       <div class="top-toolbar-right ">
+          <ul class="text-widget social-widgets social">
+               <li><a href="https://github.com" class="git" target="_blank"><i class="fab fa-github-square"></i></a></li>
+               <li><a href="https://google.com" class="gl" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
+               <li><a href="https://twitter.com" class="tw" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+               <li><a href="https://www.facebook.com/" class="fb" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+               <li>
+               <a href="../HSM-Framework.zip" class="download-btn btn"> Download <i class="fas fa-cloud-download-alt"> </i></a>
+               </li>
+           </ul>
+       </div>
+   </div>
+         <nav class="navbar-container">
+       <div class="">
+           <a href="../index.html" class="hsm-brand"><b>HSM</b></a>
+       </div>
+       <button id="navbar-toggler">
+             <span class="menu-bar-icon"><i class="fas fa-bars"></i></span>
+       </button>
+       <div id="menu">
+            <ul class="main-nav">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-title">&nbsp;Home&nbsp;</a>
+                </li>
+                <li class="nav-item">
+                    <a href="intro.html" class="nav-title">&nbsp; Intro &nbsp;</a>
+                </li>
+                <li class="nav-item">
+                    <a href="doc.html" class="nav-title active-nav-title">Documentation</a>
+                </li>
+                <li class="nav-item dropdown-menu">
+                    <a href="example.html" class="nav-title">Examples</a>
+	           </li>
+                <li class="nav-item dropdown-menu">
+                    <a href="more.html" class="nav-title">&nbsp;More&nbsp;</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+     </header>
+
+
+<main id="typo">
+    <button class="sidebar-toggler">
+                 <span class="menu-bar"><i class="fas fa-bars"></i> </span>
+        </button>
+     <div class="sidebar">
+        <div class="sidebar-menu">
+         <h3 class="sidebar-heading">Getting Started <span class="menu-bar-close"><i class="far fa-window-close"></i> </span> </h3>
+          <a href="download.html" class="sidebar-item sidebar-title">Download</a>
+          <a href="#" class="sidebar-item sidebar-title">Content</a>
+          <a href="typography.html" class="sidebar-item">Typography</a>
+          <a href="cards.html" class="sidebar-item">Cards</a>
+          <a href="image.html" class="sidebar-item">Images</a>
+          <a href="nav.html" class="sidebar-item">Navigation</a>
+          <a href="carousel.html" class="sidebar-item">Carousel</a>
+          <a href="sidebar.html" class="sidebar-item">Sidebar</a>
+          <a href="buttons.html" class="sidebar-item">Button</a>
+          <a href="accordion.html" class="sidebar-item">Accordion</a>
+          <a href="grid.html" class="sidebar-item">Grid</a>
+          <a href="forms.html" class="sidebar-item">Forms</a>
+          <a href="tabs.html" class="sidebar-item">Tabs</a>
+          <a href="gallery.html" class="sidebar-item">Gallery</a>
+          <a href="tables.html" class="sidebar-item">Tables</a>
+          <a href="menuGrid.html" class="sidebar-item">Menu Grid</a>
+          <a href="mQueries.html" class="sidebar-item">Media Queries</a>
+          <a href="heplClasses.html" class="sidebar-item">Help classes</a>
+      </div>
+    </div>
+
+    <div class=" documentation">
+        <h1 class="title">Grid Menu</h1>
+       <div class="info">
+       <section class="inline-el">
+           <h2 class="h2 mb">Classic Menu</h2>
+                   <p>Add the class <span class="sp">.menu-item</span> to style the menu heading. The <span class="sp">.menu-dots</span> adds dots in between the menu name and the price. The class <span class="sp">.menu-price</span> styles the price of the menu item and the class <span class="sp">.menu-desc</span> styles the description of the menu item</p>
+
+        		<div class="grid column321 mt ">
+								<div >
+							<div class="menu-item ">
+									<h3 class="menu-title">Tex-Mex Chicken Wings</h3>
+										<span class="menu-dots"></span>
+					<span class="menu-price"><span><span >$</span>6.50</span></span>
+											<div class="menu-desc">
+							Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce						</div>
+
+				</div>
+													<div class="menu-item ">
+									<h3 class="menu-title">Venezuelan Scrambled Eggs</h3>
+										<span class="menu-dots"></span>
+					<span class="menu-price"><span ><span >$</span>8.50</span></span>
+											<div class="menu-desc">
+							Caramelized onions . tomatoes . mashed potatoes. tilapia						</div>
+
+				</div>
+													<div class="menu-item ">
+									<h3 class="menu-title">Quesadillas Acapulco</h3>
+										<span class="menu-dots"></span>
+					<span class="menu-price"><span ><span >$</span>2.50</span></span>
+											<div class="menu-desc">
+							Corn chips topped with cheese sauce, served with sour cream, guacamole &amp; pico de gallo						</div>
+
+				</div>
+
+				</div>
+													<div >
+							<div class="menu-item ">
+									<h3 class="menu-title">Classic Nachos</h3>					<span class="menu-dots"></span>
+					<span class="menu-price"><span ><span >$</span>6.50</span></span>
+											<div class="menu-desc">
+							Corn chips topped with cheese sauce, served with sour cream, guacamole &amp; pico de gallo						</div>
+
+				</div>
+													<div class="menu-item ">
+									<h3 class="menu-title">Avocado Shell Stuffed</h3>
+										<span class="menu-dots"></span>
+					<span class="menu-price"><span ><span >$</span>8.50</span></span>
+											<div class="menu-desc">
+							Caramelized onions . tomatoes . mashed potatoes. tilapia						</div>
+
+				</div>
+													<div class="menu-item ">
+									<h3 class="menu-title">Baked Potato Jackets</h3>
+										<span class="menu-dots"></span>
+					<span class="menu-price"><span ><span >$</span>6.50</span></span>
+											<div class="menu-desc">
+							Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce						</div>
+
+				</div>
+
+				</div>
+													<div >
+							<div class="menu-item ">
+									<h3 class="menu-title">Nachos Grande</h3>
+										<span class="menu-dots"></span>
+					<span class="menu-price"><span ><span >$</span>3.50</span></span>
+											<div class="menu-desc">
+							Corn chips. Mexican fried chili beans. sour cream. guacamole &amp; salsa. chili lamb mince						</div>
+
+				</div>
+													<div class="menu-item ">
+									<h3 class="menu-title">Mexican Taco Shells</h3>
+										<span class="menu-dots"></span>
+					<span class="menu-price"><span ><span >$</span>6.50</span></span>
+											<div class="menu-desc">
+							Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce						</div>
+
+				</div>
+													<div class="menu-item ">
+									<h3 class="menu-title">Greek Stuffed Mushroom</h3>
+										<span class="menu-dots"></span>
+					<span class="menu-price"><span ><span >$</span>6.50</span></span>
+											<div class="menu-desc">
+							Sundried tomato. pimento &amp; ricotta. stuffed button mushrooms with balsamic drizzle						</div>
+
+				</div>
+
+				</div>
+							</div>
+
+
+        	<div class="htmlCode">
+
+        			<pre>
+
+&lt;div class="grid column321 mt "&gt;
+	&lt;div &gt;
+		&lt;div class="menu-item "&gt;
+			&lt;h3 class="menu-title"&gt;Tex-Mex Chicken Wings&lt;/h3&gt;
+			&lt;span class="menu-dots"&gt;&lt;/span&gt;
+			&lt;span class="menu-price"&gt;&lt;span&gt;&lt;span &gt;$&lt;/span&gt;6.50&lt;/span&gt;&lt;/span&gt;
+			&lt;div class="menu-desc"&gt;
+				Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="menu-item "&gt;
+			&lt;h3 class="menu-title"&gt;Tex-Mex Chicken Wings&lt;/h3&gt;
+			&lt;span class="menu-dots"&gt;&lt;/span&gt;
+			&lt;span class="menu-price"&gt;&lt;span&gt;&lt;span &gt;$&lt;/span&gt;6.50&lt;/span&gt;&lt;/span&gt;
+			&lt;div class="menu-desc"&gt;
+				Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="menu-item "&gt;
+			&lt;h3 class="menu-title"&gt;Tex-Mex Chicken Wings&lt;/h3&gt;
+			&lt;span class="menu-dots"&gt;&lt;/span&gt;
+			&lt;span class="menu-price"&gt;&lt;span&gt;&lt;span &gt;$&lt;/span&gt;6.50&lt;/span&gt;&lt;/span&gt;
+			&lt;div class="menu-desc"&gt;
+				Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+
+	&lt;div &gt;
+		&lt;div class="menu-item "&gt;
+			&lt;h3 class="menu-title"&gt;Tex-Mex Chicken Wings&lt;/h3&gt;
+			&lt;span class="menu-dots"&gt;&lt;/span&gt;
+			&lt;span class="menu-price"&gt;&lt;span&gt;&lt;span &gt;$&lt;/span&gt;6.50&lt;/span&gt;&lt;/span&gt;
+			&lt;div class="menu-desc"&gt;
+				Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="menu-item "&gt;
+			&lt;h3 class="menu-title"&gt;Tex-Mex Chicken Wings&lt;/h3&gt;
+			&lt;span class="menu-dots"&gt;&lt;/span&gt;
+			&lt;span class="menu-price"&gt;&lt;span&gt;&lt;span &gt;$&lt;/span&gt;6.50&lt;/span&gt;&lt;/span&gt;
+			&lt;div class="menu-desc"&gt;
+				Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="menu-item "&gt;
+			&lt;h3 class="menu-title"&gt;Tex-Mex Chicken Wings&lt;/h3&gt;
+			&lt;span class="menu-dots"&gt;&lt;/span&gt;
+			&lt;span class="menu-price"&gt;&lt;span&gt;&lt;span &gt;$&lt;/span&gt;6.50&lt;/span&gt;&lt;/span&gt;
+			&lt;div class="menu-desc"&gt;
+				Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+        			</pre>
+
+        	</div>
+
+       </section>
+       </div>
+    </div><div class="clearfix"></div>
+</main>
+
+</body>
+</html>

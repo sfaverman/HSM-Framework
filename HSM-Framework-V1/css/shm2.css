@@ -1,0 +1,30 @@
+/*Demo Site 2 CSS Styles*/
+.backgroundImage {
+   background: url("../images/images.jpg") no-repeat center;
+  background-size: cover;
+}
+.marginZero {
+    margin-bottom: 0 !important;
+}
+.bgImage2 {
+    background: url('../images/imageOverlay.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.styleAccord {
+    background-color: #9b8471 !important;
+    color: #000 !important;
+}
+#menu {
+
+    background-color: #000;
+    border-top: 1px solid #ccc;
+}
+.opacityNone {
+    opacity: 1;
+    color: #fff;
+}
+.container2 {
+    max-width: 1200px;
+    margin: 1em 20px; /* SXF mod 06-11-19 */
+}

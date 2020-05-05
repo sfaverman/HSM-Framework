@@ -36,6 +36,18 @@
             </div>
         </article>
         <article class="card-container">
+            <h3>Sofia</h3>
+            <p>Full Stack Web Developer</p>
+            <div class="gallery">
+                <div>
+                    <a href="https://www.linkedin.com/in/sofia-faverman-8b113882/" class="btn btn-primary">LinkedIn <i class="fab fa-linkedin"></i></a>
+                </div>
+                <div>
+                    <a href="http://sfaverman.com/" class="btn btn-primary">Portfolio <i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </article>
+        <article class="card-container">
             <h3>Monali</h3>
             <p>Designer , Developer</p>
             <div class="gallery">
@@ -47,18 +59,7 @@
                 </div>
             </div>
         </article>
-        <article class="card-container">
-            <h3>Sofia</h3>
-            <p>Designer , Developer</p>
-            <div class="gallery">
-                <div>
-                    <a href="https://www.linkedin.com/in/sofia-faverman-8b113882/" class="btn btn-primary">LinkedIn <i class="fab fa-linkedin"></i></a>
-                </div>
-                <div>
-                    <a href="http://sfaverman.com/" class="btn btn-primary">Portfolio <i class="fas fa-globe"></i></a>
-                </div>
-            </div>
-        </article>
+
 
     </div>
          </div>

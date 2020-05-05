@@ -2,6 +2,7 @@
 	 // Set the page title and include the header file.
     define('TITLE', 'HSM-Documentation');
     include('../includes/header.html');
+    include('../includes/sidebar.html');
 ?>
     <style>
        main {
@@ -15,35 +16,6 @@
         }
 	</style>
 
-
-<main id="typo">
-
- <button class="sidebar-toggler">
-                 <span class="menu-bar"><i class="fas fa-bars"></i> </span>
-        </button>
-      <div class="sidebar">
-        <div class="sidebar-menu">
-         <h3 class="sidebar-heading">Getting Started <span class="menu-bar-close"><i class="far fa-window-close"></i> </span> </h3>
-          <a href="download.html" class="sidebar-item sidebar-title">Download</a>
-          <a href="#" class="sidebar-item sidebar-title">Content</a>
-          <a href="typography.html" class="sidebar-item">Typography</a>
-          <a href="cards.html" class="sidebar-item">Cards</a>
-          <a href="image.html" class="sidebar-item">Images</a>
-          <a href="nav.html" class="sidebar-item">Navigation</a>
-          <a href="carousel.html" class="sidebar-item">Carousel</a>
-          <a href="sidebar.html" class="sidebar-item">Sidebar</a>
-          <a href="buttons.html" class="sidebar-item">Button</a>
-          <a href="accordion.html" class="sidebar-item">Accordion</a>
-          <a href="grid.html" class="sidebar-item">Grid</a>
-          <a href="forms.html" class="sidebar-item">Forms</a>
-          <a href="tabs.html" class="sidebar-item">Tabs</a>
-          <a href="gallery.html" class="sidebar-item">Gallery</a>
-          <a href="tables.html" class="sidebar-item">Tables</a>
-          <a href="menuGrid.html" class="sidebar-item">Menu Grid</a>
-          <a href="mQueries.html" class="sidebar-item">Media Queries</a>
-          <a href="heplClasses.html" class="sidebar-item">Help classes</a>
-      </div>
-    </div>
 
 <div class=" documentation">
     <h1 class="title"> Documentation </h1>

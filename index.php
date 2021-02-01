@@ -11,8 +11,8 @@
              <p>From top to bottom, HSM is enriched with excellent features and elements that will put your food business ahead of the competition. Of course, you can always improve the default style with your creative touches and make it stand out from the masses with ease. Create a must-try food and drink menu, start a blog and profit from the included contact form and all necessary components.</p>
          </div>
          <p class="text-alignCenter mb">
-             <a href="pages/doc.html" class="btn btn-default ">Get Started  <i class="fas fa-thumbs-up"></i></a>
-             <a href="pages/download.html" class="btn btn-success ml">Download <i class="fas fa-cloud-download-alt"></i> </a>
+             <a href="pages/doc.php" class="btn btn-default ">Get Started  <i class="fas fa-thumbs-up"></i></a>
+             <a href="pages/download.php" class="btn btn-success ml">Download <i class="fas fa-cloud-download-alt"></i> </a>
         <a href="https://github.com/sfaverman/HSM-Framework" target="_blank" class="btn btn-primary ml"> Visit Github <i class="fab fa-github-square"></i></a>
 
          </p>
